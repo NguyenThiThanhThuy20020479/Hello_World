@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name = "viewport" content = "width = device - width, initial - scale = 1.0">
+        <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
         <title>
             UNIVERSITY WEBSITE DESIGN - easy tutorials
         </title>
@@ -18,31 +18,33 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Hurricane&family=Pacifico&family=Palette+Mosaic&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="header">
             <nav>
                 <a href="index.html"><img src="image/logovnu.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a hef="" class="menu1">HOME</a></li>
-                        <li><a hef="" class="menu2">ABOUT</a></li>
-                        <li><a hef="" class="menu3">COURSE</a></li>
-                        <li><a hef="" class="menu4">CONTACT</a></li>
+                        <li><a hef="" class="menu" onclick="showlist()">HOME</a></li>
+                        <li><a hef="" class="menu">ABOUT</a></li>
+                        <li><a hef="" class="menu">COURSE</a></li>
+                        <li><a hef="" class="menu">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class = "fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <div class = "text_box">
+            <div class = "text-box">
                 <h1>WELCOM TO THE VIETNAM NATIONAL UNIVERSITY</h1>
                 <p>
                     Chào mừng bạn đến với trung tâm giáo dục thể chất Đại học Quốc gia Hà Nội
                 </p>
-                <a href="" class="box_link">Visit us to know more</a>
-
+                <a href="login.php" class="hero-btn">Login</a>
             </div>
             
         </section>
-
         
     </body>
+
 </html>
